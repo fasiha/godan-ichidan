@@ -1,0 +1,42 @@
+{
+  "name": "godan-ichidan",
+  "version": "1.0.0",
+  "description": "Classify Japanese verbs into godan or ichidan easily",
+  "main": "index.js",
+  "module": "dist/godanIchidan.min.mjs",
+  "exports": {
+    ".": {
+      "browser": "./dist/godanIchidan.min.mjs",
+      "node": {
+        "import": "./dist/godanIchidan.min.mjs",
+        "require": "./index.js"
+      },
+      "import": "./dist/godanIchidan.min.mjs"
+    }
+  },
+  "scripts": {
+    "build": "node esbuild.mjs",
+    "download": "sh download.sh",
+    "analysis": "node analysis.js",
+    "test": "node validate.js"
+  },
+  "keywords": [
+    "ichidan",
+    "godan",
+    "japanese",
+    "verb",
+    "grammar",
+    "nlp"
+  ],
+  "author": "Ahmed Fasih",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fasiha/ichidan-godan-classifier.git"
+  },
+  "license": "Unlicense",
+  "types": "index.d.ts",
+  "devDependencies": {
+    "@chialab/esbuild-plugin-commonjs": "^0.17.2",
+    "esbuild": "^0.17.15"
+  }
+}
