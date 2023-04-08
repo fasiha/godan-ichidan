@@ -37,3 +37,10 @@ Then:
 - `npm run analysis` will crawl the dictionary and generate the required lists of verbs
 - `npm run validate` or `npm test` will exercise the library by checking it against every single verb in JMdict
 - `npm run build` uses ESbuild to convert my horrible code to ESM and 
+
+If `npm run download` doesn't work (it uses `curl` and `jq`, which maybe you don't have installed), here are manual instructions:
+1. Go to https://github.com/scriptin/jmdict-simplified/releases
+2. Download the most recent "jmdict-eng" tgz or zip
+3. Uncompress the download and put the JSON in this directory.
+
+The version of this package should include the date that the original JMdict XML file was downloaded and consumed by JMdict-Simplified (it's also included in `dictDate.js`). This can be important because JMdict is constantly undergoing revisions and for example, the 2023-04-03 version has 猿猴が月を取る as an ichidan verb but on 2023-04-04 it was corrected to be godan (see [JMdict raw entry](http://www.edrdg.org/jmdictdb/cgi-bin/entr.py?svc=jmdict&sid=&q=2848071.1)).

@@ -1,6 +1,6 @@
 {
   "name": "godan-ichidan",
-  "version": "1.0.0",
+  "version": "1.0.0-2023-04-03",
   "description": "Classify Japanese verbs into godan or ichidan easily",
   "main": "index.js",
   "module": "dist/godanIchidan.min.mjs",
