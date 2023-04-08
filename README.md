@@ -35,7 +35,7 @@ Then:
 ## Dev
 - `npm run download` will download the latest [JMdict-Simplified](https://github.com/scriptin/jmdict-simplified) JSON
 - `npm run analysis` will crawl the dictionary and generate the required lists of verbs
-- `npm run validate` or `npm test` will exercise the library by checking it against every single verb in JMdict
+- `npm test` will exercise the library by checking it against every single verb in JMdict
 - `npm run build` uses ESbuild to convert my horrible code to ESM and 
 
 If `npm run download` doesn't work (it uses `curl` and `jq`, which maybe you don't have installed), here are manual instructions:
